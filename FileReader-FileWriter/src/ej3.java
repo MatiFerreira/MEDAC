@@ -6,19 +6,26 @@ public class ej3 {
         Scanner tc = new Scanner(System.in);
         try {
             File fFile = new File("./archivo.txt");
-            fFile.createNewFile();
             Writer wWriter = new FileWriter(fFile);
-            wWriter.write("Hola me llamo mathias Ferreira Ferreira"+"\n");
+            wWriter.write("Hola me llamo Mathias Ferreira Ferreira.Esto es Facil."+"\n");
+            wWriter.write("Mathias es una persona curiosa"+"\n");
             wWriter.close();
-            Reader rReader = new FileReader("./archivo.txt");
-            System.out.println("Dame la palabra que creas que se repite :( ");
-            String tmp = tc.nextLine();
-                for (int i=0;i<tmp.length();i++){
-                    char cValor =(char)i;
-                    char[]valores = {cValor};
+            BufferedReader bfReader = new BufferedReader(new FileReader("./archivo.txt"));
+            System.out.print("Dame la palabra que creas que se repite : ");
+            String tmp = tc.nextLine(); //Recogemos las palabras a comparar
+            int contador =0;
+            String palabras;
+            //WHILE le metemos la cadena de texto en palabras y no salimos hasta que este vacio :/
+            while ((palabras = bfReader.readLine()) !=null){
+                //recorro el tamaño del texto y con substring le indico donde empezar y con startwith comparo el texto que le he pasado si coincide
+                for (int i=0;i<palabras.length();i++){
+                    if (palabras.substring(i).startsWith(tmp)){
+                        contador++;
+                    }
                 }
-            rReader.close();
-
+            }
+            System.out.println(contador);
+            bfReader.close();
         }catch (Exception z){
             System.out.println(z.getMessage() +";(");
         }

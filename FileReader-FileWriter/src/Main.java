@@ -17,7 +17,7 @@ public class Main {
             System.out.println("Ha terminado correctamente");
             wWriter.close();
         }catch (Exception z){
-
+            System.out.println(z.getMessage());
         }
     }
 }
