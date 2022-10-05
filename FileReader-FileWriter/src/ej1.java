@@ -1,8 +1,7 @@
-import java.io.File;
 import java.io.FileWriter;
 import java.io.Writer;
 
-public class Main {
+public class ej1 {
     public static void main(String[] args) {
         //capturamos datos
         try {
