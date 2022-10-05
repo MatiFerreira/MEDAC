@@ -7,19 +7,21 @@ public class ej5 {
             Writer wWriter = new FileWriter("./sumanumeros.txt");
             for (int i=0;i<10;i++){
                 int alea = (int)(Math.random()*10);
+                //pasamos a Tipo int -> String
                 wWriter.write(String.valueOf(alea)+"\n");
             }
+            //cerramos
             wWriter.close();
-            Reader rReader = new FileReader("./sumanumeros.txt");
-            int contador =0;
-            int suma =0;
-
-            while ((contador =rReader.read()) !=-1){
-                System.out.print((char) contador);
-                suma += contador;
+            BufferedReader bfReader = new BufferedReader(new FileReader("./sumanumeros.txt"));
+            int sumar =0;
+            String tmp;
+            while ((tmp = bfReader.readLine()) !=null){
+                System.out.println(tmp);
+                int valorstr = Integer.parseInt(tmp);
+                sumar += valorstr;
             }
-            System.out.println("La suma de todo el archivo es "+ suma);
-            rReader.close();
+            System.out.println(sumar);
+            bfReader.close();
 
 
         }catch (Exception z){
