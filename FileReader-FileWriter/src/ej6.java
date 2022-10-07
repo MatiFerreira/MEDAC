@@ -21,7 +21,7 @@ public class ej6 {
                 wWriter.write("--------------------------------------------------");
                 wWriter.close();
                 System.out.println("Quiere salir del programa(no/si): ");
-                 salir = tc.nextLine();
+                 salir = tc.nextLine().toLowerCase();
                 BufferedReader bfReader = new BufferedReader(new FileReader("./datos-personal.txt"));
                 String texto;
                 while ((texto = bfReader.readLine()) != null) {
