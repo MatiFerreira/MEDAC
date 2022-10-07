@@ -8,7 +8,8 @@ public class ej7 {
         try {
             FileOutputStream fosAccess = new FileOutputStream("./numeros.txt");
             for (int i=1;i<101;i++){
-                fosAccess.write(i);
+                String test = i+"\n";
+                fosAccess.write(test.getBytes());
             }
             fosAccess.close();
         }catch (Exception z){
