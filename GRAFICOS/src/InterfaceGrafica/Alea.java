@@ -34,24 +34,38 @@ import java.util.concurrent.*;
 
         @Override
         public void actionPerformed(ActionEvent e) {
+
             if (e.getSource() == bt) {
+
                 String cad = jtfText.getText();
                 int x1;
-                try {
-                    x1 = Integer.parseInt(cad);
-                    if (x1< num) {
-                        setTitle("Es mayor");
-                    } else {
-                        setTitle("Es menor");
-                    }
-                    if (x1 == num) {
-                        setTitle("Congratulation");
-                    }
-                }catch (Exception z){
-                    setTitle("No es un numero");
-                }
+                ArrayList<Integer>repetido = new ArrayList<>();
 
+                //intento pasar a string a numero y si no puedo es porque estaré metiendo caracteres
+                    try {
+                            x1 = Integer.parseInt(cad);
+                            repetido.add(x1);
+
+                            if (x1 < num) {
+                                setTitle("Es mayor");
+                                JOptionPane.showMessageDialog(null, "El numero es mayor al que acabas de poner");
+                            }
+                            if(x1>num){
+                                setTitle("Es menor");
+                                JOptionPane.showMessageDialog(null, "El numero es menor al que acabas de poner");
+                            }
+                            if (x1 == num) {
+                                setTitle("Congratulation");
+                                JOptionPane.showMessageDialog(null, "Operación realizada correctamente");
+                            }
+
+
+                    } catch (Exception z) {
+                        setTitle("error");
+                        JOptionPane.showMessageDialog(null, "Operación realizada Incorrectamente , solo numeros enteros");
+                    }
             }
+
         }
 
 
