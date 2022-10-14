@@ -7,7 +7,7 @@ import java.util.concurrent.*;
 
 
     public class Alea extends JFrame implements ActionListener {
-
+        int[]arrayInt = new int[100];
         private int num;
         private JButton bt;
         private JTextField jtfText;
@@ -39,21 +39,37 @@ import java.util.concurrent.*;
 
                 String cad = jtfText.getText();
                 int x1;
-                ArrayList<Integer>repetido = new ArrayList<>();
-
                 //intento pasar a string a numero y si no puedo es porque estaré metiendo caracteres
                     try {
                             x1 = Integer.parseInt(cad);
-                            repetido.add(x1);
+                            //Guardo la letra repetida y si no esta pues lo guardo
+                            for(int i=0;i<arrayInt.length;i++){
+                                if(arrayInt[i] == x1){
+                                    JOptionPane.showMessageDialog(null, "Se ha repetido con anterioridad");
+                                    i=arrayInt.length;
+                                    return;
+                                }else{
+                                    arrayInt[i] = x1;
+                                    i = arrayInt.length;
+                                }
+                            }
 
+                            //Comprueba que no sea ni menor a 0 y ni mayor a 100
+                            if((x1<0)||(x1>100)){
+                                JOptionPane.showMessageDialog(null, "Numeros entre 1-100");
+                                return;
+                            }
+                            //Si es mayor
                             if (x1 < num) {
                                 setTitle("Es mayor");
                                 JOptionPane.showMessageDialog(null, "El numero es mayor al que acabas de poner");
                             }
+                            //Comprobamos el numero sea menor
                             if(x1>num){
                                 setTitle("Es menor");
                                 JOptionPane.showMessageDialog(null, "El numero es menor al que acabas de poner");
                             }
+                            //comprobamos que el numero sea igual y si es asi gano
                             if (x1 == num) {
                                 setTitle("Congratulation");
                                 JOptionPane.showMessageDialog(null, "Operación realizada correctamente");
