@@ -55,16 +55,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void dividir(View view) {
-        String valor1 = et1.getText().toString();
-        String valor2 = et2.getText().toString();
-        int valortexto = Integer.parseInt(valor1);
-        int valortexto2 = Integer.parseInt(valor2);
-        try {
+          try {
+            String valor1 = et1.getText().toString();
+            String valor2 = et2.getText().toString();
+            int valortexto = Integer.parseInt(valor1);
+            int valortexto2 = Integer.parseInt(valor2);
             int result = valortexto / valortexto2;
             String strResultado = String.valueOf(result);
             tv1.setText(strResultado);
-        } catch (NumberFormatException  e) {
+        } catch (ArithmeticException e) {
             tv1.setText("0");
+        }catch (Exception z){
+            tv1.setText("NUMEROS PORFAVOR");
         }
     }
 
