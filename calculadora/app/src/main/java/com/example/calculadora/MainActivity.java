@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void dividir(View view) {
-          try {
+        try {
             String valor1 = et1.getText().toString();
             String valor2 = et2.getText().toString();
             int valortexto = Integer.parseInt(valor1);

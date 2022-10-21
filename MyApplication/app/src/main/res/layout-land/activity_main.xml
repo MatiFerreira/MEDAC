@@ -16,11 +16,9 @@
         android:layout_weight="2"
         android:gravity="center"
         android:orientation="vertical"
-
         >
 
         <EditText
-            android:id="@+id/texto1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="2"
@@ -29,7 +27,6 @@
         </EditText>
 
         <EditText
-            android:id="@+id/texto2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="inserta un numero"
@@ -48,27 +45,24 @@
         android:orientation="horizontal">
 
         <Button
-            android:drawableEnd="@drawable/sumar"
-            android:id="@+id/button1"
+            android:id="@+id/sumar"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="SUMAR"
-            android:onClick="sumar"
-            />
+            android:onClick="sumar" />
 
         <Button
-            android:drawableEnd="@drawable/restar"
-            android:id="@+id/button2"
+            android:id="@+id/restar"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="RESTAR"
-            android:onClick="restar" />
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -78,29 +72,25 @@
         android:orientation="horizontal"
 
         >
-
         <Button
-            android:drawableEnd="@drawable/multiplicar"
-
-            android:id="@+id/button3"
+            android:id="@+id/multiplicar"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="Multiplicar"
-            android:onClick="multiplicar" />
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            />
 
         <Button
-            android:drawableEnd="@drawable/dividir"
-            android:id="@+id/button4"
+            android:id="@+id/dividir"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="Dividir"
-            android:onClick="dividir" />
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            />
 
 
     </LinearLayout>
@@ -111,22 +101,9 @@
         android:gravity="center"
         android:orientation="horizontal">
         <TextView
-            android:id="@+id/resultado"
-            android:layout_width="1070px"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            android:textSize="70px"
-            android:textColor="@color/black"
-            android:hint="Resultado"
-
-
-            android:layout_gravity="center"
-            >
-
-        </TextView>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"></TextView>
 
     </LinearLayout>
-
-
 
 </LinearLayout>

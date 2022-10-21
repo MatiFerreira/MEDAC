@@ -16,7 +16,6 @@
         android:layout_weight="2"
         android:gravity="center"
         android:orientation="vertical"
-
         >
 
         <EditText
@@ -48,23 +47,20 @@
         android:orientation="horizontal">
 
         <Button
-            android:drawableEnd="@drawable/sumar"
             android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="SUMAR"
-            android:onClick="sumar"
-            />
+            android:onClick="sumar" />
 
         <Button
-            android:drawableEnd="@drawable/restar"
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="RESTAR"
@@ -80,23 +76,20 @@
         >
 
         <Button
-            android:drawableEnd="@drawable/multiplicar"
-
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="Multiplicar"
             android:onClick="multiplicar" />
 
         <Button
-            android:drawableEnd="@drawable/dividir"
             android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="45dp"
-            android:layout_marginStart="40dp"
+            android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
             android:hint="Dividir"
@@ -115,10 +108,9 @@
             android:layout_width="1070px"
             android:layout_height="match_parent"
             android:textAlignment="center"
-            android:textSize="70px"
+            android:textSize="100px"
             android:textColor="@color/black"
             android:hint="Resultado"
-
 
             android:layout_gravity="center"
             >
