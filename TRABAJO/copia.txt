@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libros>
+    <libro codigo="L001">
+        <titulo>Mujercitas</titulo>
+        <nombre>Louisa</nombre>
+        <apellido>May Scott</apellido>
+    </libro>
+    <libro codigo="L002">
+        <titulo>Las uvas de la ira</titulo>
+        <nombre>John</nombre>
+        <apellido>Steinbeck</apellido>
+    </libro>
+    <libro codigo="L003">
+        <titulo>Dracula</titulo>
+        <nombre>Bram</nombre>
+        <apellido>Stoker</apellido>
+    </libro>
+    <libro codigo="L004">
+        <titulo>Crimen y Castigo</titulo>
+        <nombre>Fiodor</nombre>
+        <apellido>Dovstoyeski</apellido>
+    </libro>
+    <libro codigo="L005">
+        <titulo>Crimen y Castigo</titulo>
+        <nombre>Fiodor</nombre>
+        <apellido>Dovstoyeski</apellido>
+    </libro>
+    <libro codigo="L006">
+        <titulo>El exorcista</titulo>
+        <nombre>William</nombre>
+        <apellido>Peter Blatty</apellido>
+    </libro>
+    <libro codigo="L007">
+        <titulo>Peter Pan</titulo>
+        <nombre>James M</nombre>
+        <apellido>Barry</apellido>
+    </libro>
+</libros>
