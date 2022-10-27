@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<instituto>
+	<alumno id="1">
+		<nombre>Jose</nombre>
+		<apellido>Garcia</apellido>
+		<nota>7</nota>
+	</alumno>
+	<alumno id="2">
+		<nombre>Roberto</nombre>
+		<apellido>Pelaez</apellido>
+		<nota>6</nota>
+	</alumno>
+	<alumno id="3">
+		<nombre>Antonio</nombre>
+		<apellido>Garcia</apellido>
+		<nota>7</nota>
+	</alumno>
+	<alumno id="4">
+		<nombre>Roberto</nombre>
+		<apellido>Gomez</apellido>
+		<nota>3</nota>
+	</alumno>
+	<alumno id="5">
+		<nombre>Maria</nombre>
+		<apellido>Lopez</apellido>
+		<nota>9</nota>
+	</alumno>
+	<alumno id="6">
+		<nombre>Marga</nombre>
+		<apellido>Pelaez</apellido>
+		<nota>8</nota>
+	</alumno>
+	<alumno id="7">
+		<nombre>Antonio</nombre>
+		<apellido>jose</apellido>
+		<nota>2</nota>
+	</alumno>
+	<alumno id="8">
+		<nombre>Roberto</nombre>
+		<apellido>Lopez</apellido>
+		<nota>4</nota>
+	</alumno>
+	<alumno id="9">
+		<nombre>Jose</nombre>
+		<apellido>Garcia</apellido>
+		<nota>7</nota>
+	</alumno>
+</instituto>
