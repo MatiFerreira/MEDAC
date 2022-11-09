@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos_de_futbol>
+   <equipo>
+      <nombre>Valencia CF</nombre>
+      <ciudad>Valencia</ciudad>
+      <entrenador>Gatusso</entrenador>
+
+      <jugadores>
+      <jugador posicion="portero">
+           <nombre>Jaume Domenech</nombre>
+           <nacionalidad>española</nacionalidad>
+      </jugador>
+
+      <jugador posicion="delantero">
+           <nombre>Cavani</nombre>
+           <nacionalidad>uruguay</nacionalidad>
+      </jugador>
+      </jugadores>
+
+   </equipo>
+
+   <equipo>
+      <nombre>Real Sociedad</nombre>
+      <ciudad>San Sebastián</ciudad>
+      <entrenador></entrenador>
+      <jugadores>
+      <jugador posicion="portero">
+            <nombre>Remiro</nombre>
+            <nacionalidad>española</nacionalidad>
+      </jugador>
+      <jugador posicion="medio">
+            <nombre>Mikel Merino</nombre>
+            <nacionalidad>española</nacionalidad> 
+      </jugador>
+      </jugadores>
+   </equipo>
+</equipos_de_futbol>

@@ -1,0 +1,22 @@
+<empresa>
+  <trabajador id="1">
+    <nombre>Juan</nombre>
+    <apellido>Perez</apellido>
+    <edad>50</edad>
+  </trabajador>
+  <trabajador id="2">
+    <nombre>Antonio</nombre>
+    <apellido>Martin</apellido>
+    <edad>40</edad>
+  </trabajador>
+ <trabajador id="3">
+    <nombre>Lola</nombre>
+    <apellido>Ruiz</apellido>
+    <edad>35</edad>
+  </trabajador>
+  <trabajador id="4">
+    <nombre>Maria</nombre>
+    <apellido>Suarez</apellido>
+    <edad>40</edad>
+  </trabajador>
+</empresa>

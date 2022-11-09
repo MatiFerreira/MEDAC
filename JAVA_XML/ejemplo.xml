@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<selva>
+    <animal id="1">
+        <nombre>Panther</nombre>
+        <tipo>Pantera</tipo>
+        <color>Negro</color>
+        <edad>8</edad>
+    </animal>
+    <animal id="2">
+        <nombre>King</nombre>
+        <tipo>León</tipo>
+        <color>Marrón</color>
+        <edad>10</edad>
+    </animal>
+</selva>
