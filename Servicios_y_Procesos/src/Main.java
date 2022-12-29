@@ -11,6 +11,11 @@ public class Main {
         System.out.println(carreritaChill.getGanador());
         System.out.println(carreritaChill.getFinalizados());
 
+        Buffer b = new Buffer(10);
+        Productor productor = new Productor(b);
+        Consumidor consumidor = new Consumidor(b);
+        productor.start();
+        consumidor.start();
     }
 
 }
