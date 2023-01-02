@@ -42,7 +42,7 @@ public class myadapter extends BaseAdapter {
         if (convertView ==null){
             /*SE INFLA LA VISTA QUE HA LLEGADO CON NUESTRO LAYOUT PERSONALIZADO*/
             LayoutInflater layoutInflater = LayoutInflater.from(this.context);
-            convertView = layoutInflater.inflate(R.layout.list_item,null);
+            convertView = layoutInflater.inflate(this.layout,null);
             holder = new viewHolder();/*ESTA CREARIA LA CLASE POR CADA TEXTVIEW ALMACENANDO EL VALOR*/
             /*referenciamos el elemento a modificar y lo rellenamos*/
             holder.textView = convertView.findViewById(R.id.editTextTextPersonName); /*el view viene del layoutinflater.inflate(r.layout.list_item)... por eso podemos acceder al findview*/
